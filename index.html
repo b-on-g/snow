@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+	<title>$bog_snow Demo</title>
+	<link href="web.css" rel="stylesheet"/>
+</head>
+<body mol_view_root="$bog_snow_demo">
+	
+	<div mol_view_root="$bog_snow" mol_view_class="$bog_snow"></div>
+	
+	<div style="padding: 2rem; max-width: 800px; margin: 0 auto;">
+		<h1>❄ $bog_snow Demo ❄</h1>
+		<p>Плагин для создания эффекта падающего снега на странице.</p>
+		
+		<h2>Особенности:</h2>
+		<ul>
+			<li>40 снежинок с различными параметрами</li>
+			<li>Случайная позиция по горизонтали (0-100%)</li>
+			<li>Случайная скорость падения (5-15 секунд)</li>
+			<li>Случайная задержка старта анимации</li>
+			<li>Случайный размер (10px-30px)</li>
+			<li>Плавная CSS анимация падения</li>
+			<li>Покачивание из стороны в сторону</li>
+			<li>Полупрозрачность для реалистичности</li>
+			<li>Разные символы снежинок (❄ ❅ ❆ •)</li>
+		</ul>
+		
+		<h2>Использование:</h2>
+		<pre><code>&lt;div mol_view_root="$bog_snow" mol_view_class="$bog_snow"&gt;&lt;/div&gt;</code></pre>
+		
+		<h2>Пример в $mol_page:</h2>
+		<pre><code>$my_app $mol_page
+	body /
+		&lt;= Snow $bog_snow
+		&lt;= Content $mol_view
+			sub / <= your_content</code></pre>
+		
+		<p style="margin-top: 3rem; color: #666;">
+			Снег падает поверх этого контента, но не блокирует взаимодействие с элементами страницы.
+		</p>
+		
+		<div style="height: 200vh; display: flex; align-items: center; justify-content: center; flex-direction: column;">
+			<h3>Прокрутите страницу вниз</h3>
+			<p>Снег продолжает падать независимо от скролла</p>
+		</div>
+	</div>
+	
+	<script src="web.js"></script>
+</body>
+</html>
