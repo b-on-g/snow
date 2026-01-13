@@ -1,0 +1,51 @@
+$bog_snow_demo $mol_page
+	title @ \$bog_snow Demo
+	tools /
+		<= Theme_lights $mol_lights_toggle
+	plugins /
+		<= Favicon $bog_favicon
+			Icon <= icon $mol_icon_worker
+		<= Snow $bog_snow
+		<= Theme $mol_theme_auto
+	body /
+		<= Welcome $mol_paragraph
+			title @ \Плагин для создания эффекта падающего снега на странице
+		<= Features $mol_section
+			title @ \Особенности
+			content /
+				<= Features_list $mol_list
+					rows /
+						<= Feature1 $mol_paragraph
+							title @ \10 снежинок с различными параметрами
+						<= Feature2 $mol_paragraph
+							title @ \Случайная позиция по горизонтали (0-100%)
+						<= Feature3 $mol_paragraph
+							title @ \Случайная скорость падения (5-15 секунд)
+						<= Feature4 $mol_paragraph
+							title @ \Случайная задержка старта анимации
+						<= Feature5 $mol_paragraph
+							title @ \Случайный размер (10px-30px)
+						<= Feature6 $mol_paragraph
+							title @ \Плавная CSS анимация падения
+						<= Feature7 $mol_paragraph
+							title @ \Покачивание из стороны в сторону
+						<= Feature8 $mol_paragraph
+							title @ \Полупрозрачность для реалистичности
+						<= Feature9 $mol_paragraph
+							title @ \Разные символы снежинок (❄ ❅ ❆ •)
+		<= Usage $mol_section
+			title @ \Использование в $mol_page
+			content /
+				<= Code_example $mol_textarea
+					value <= code_example @ \$my_app $mol_page
+						\ plugins /
+						\	<= Snow $bog_snow
+						\		body /
+						\			<= Content $mol_view
+		<= Note $mol_paragraph
+			title @ \Снег падает поверх контента, но не блокирует взаимодействие с элементами страницы
+		<= Spacer $mol_view
+			style * height \100vh
+			sub /
+				<= Scroll $mol_paragraph
+					title @ \Прокрутите страницу вниз - снег продолжает падать независимо от скролла
