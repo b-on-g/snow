@@ -1,1 +1,20 @@
-{}
+{
+	"$bog_snow_demo_Feature1_title": "10 снежинок с различными параметрами",
+	"$bog_snow_demo_Feature2_title": "Случайная позиция по горизонтали (0-100%)",
+	"$bog_snow_demo_Feature3_title": "Случайная скорость падения (5-15 секунд)",
+	"$bog_snow_demo_Feature4_title": "Случайная задержка старта анимации",
+	"$bog_snow_demo_Feature5_title": "Случайный размер (10px-30px)",
+	"$bog_snow_demo_Feature6_title": "Плавная CSS анимация падения",
+	"$bog_snow_demo_Feature7_title": "Покачивание из стороны в сторону",
+	"$bog_snow_demo_Feature8_title": "Полупрозрачность для реалистичности",
+	"$bog_snow_demo_Feature9_title": "Разные символы снежинок (❄ ❅ ❆ •)",
+	"$bog_snow_demo_Features_title": "Особенности",
+	"$bog_snow_demo_Note_title": "Снег падает поверх контента, но не блокирует взаимодействие с элементами страницы",
+	"$bog_snow_demo_Scroll_title": "Прокрутите страницу вниз - снег продолжает падать независимо от скролла",
+	"$bog_snow_demo_Usage_title": "Использование в $mol_page",
+	"$bog_snow_demo_Welcome_title": "Плагин для создания эффекта падающего снега на странице",
+	"$bog_snow_demo_code_example": "$my_app $mol_page plugins /\n\t<= Snow $bog_snow\n\t\tbody /\n\t\t\t<= Content $mol_view",
+	"$bog_snow_demo_title": "$bog_snow Demo",
+	"$mol_lights_toggle_hint": "Toggle lights",
+	"$mol_text_code_Copy_hint": "Copy whole code"
+}
