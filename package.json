@@ -200,7 +200,8 @@
     "$mol_html_encode",
     "$mol_html",
     "$mol_string",
-    "$mol_hotkey"
+    "$mol_hotkey",
+    "$mol_hotkey2"
   ],
   "dependencies": {
     "autoinstall": "*",
